@@ -1,0 +1,13 @@
+{
+    "web":{
+        "rewrites":{
+            "enable":"true"
+        }
+    },
+    "app":{
+        "cfengine":"lucee@5",
+        "_adobe_cfengine":"adobe@2016",
+        "_lucee_cfengine":"lucee@5"
+    },
+    "name":"head-first-design-patterns"
+}
