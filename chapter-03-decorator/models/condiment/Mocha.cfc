@@ -4,11 +4,11 @@ component
 {
     
     function cost() {
-        return beverage.cost() + 0.10;
+        return beverage.cost() + 0.20;
     }
 
     function getDescription() {
-        return beverage.getDescription() & ", steamed milk";
+        return beverage.getDescription() & ", mocha";
     }
 
 }

@@ -8,7 +8,7 @@ component
     }
 
     function getDescription() {
-        return beverage.getDescription() & ", steamed milk";
+        return beverage.getDescription() & ", whip";
     }
 
 }

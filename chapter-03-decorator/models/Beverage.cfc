@@ -9,7 +9,9 @@ component
     
     function init() {
         
-        onInit();
+        onInit(
+            argumentCollection = arguments
+        );
 
         return this;
 
@@ -21,7 +23,7 @@ component
 
 
     function cost() {
-        return 
+        throw( "you must implement cost()" );
     }
 
 }

@@ -3,8 +3,14 @@ component
     accessors="true"
 {
 
-    function onInit() {
-        variables.price = 0.89;
+    function onInit() {}
+
+    function cost() {
+        return 0.89;
+    }
+
+    function getDescription() {
+        return "house blend coffee";
     }
 
 }
