@@ -15,6 +15,3 @@ This chapter also demonstrates that the factory pattern also helps to implement 
 ![UML Diagram Showing Factory Patern][uml_diagram]
 
 [uml_diagram]: https://upload.wikimedia.org/wikipedia/commons/4/43/W3sDesign_Factory_Method_Design_Pattern_UML.jpg "UML Diagram Showing Factory Patern"
-
-
-

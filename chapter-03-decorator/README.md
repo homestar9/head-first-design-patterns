@@ -17,4 +17,3 @@ I don't care for the fact that condiments have their individual addon price incl
 I see a few problems with this pattern that smell funny to me.  First of all, I don't like the idea of wrapping other classes and simulating their type. In other words a `condiment` is not a `beverage`.  I also don't like that each decorator has to implement every method that the wrapped class has.  This means if there's a method called `drink()` in the `beverage` class, the `condiment` decorator needs to have a `drink()` method also (even if it just returns `beverage.drink()`).
 
 [uml_diagram]: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Decorator_UML_class_diagram.svg/600px-Decorator_UML_class_diagram.svg.png "UML Diagram Showing Decorator Patern"
-
