@@ -1,5 +1,6 @@
 component 
-    extends="models.ingredient.sauce"
+    extends="models.ingredient.ingredient"
+    implements="models.ingredient.iSauce"
     hint="I am a concrete implementation of an ingredient"
 {
 

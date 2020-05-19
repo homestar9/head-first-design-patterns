@@ -4,11 +4,11 @@ component
 {
 
     property name="name";
-    property name="dough" type="Ingredient";
-    property name="sauce" type="Ingredient";
+    property name="dough" type="iDough";
+    property name="sauce" type="iSauce";
     property name="veggies" type="array";
-    property name="pepperoni" type="Ingredient";
-    property name="clams" type="Ingredient"
+    property name="pepperoni" type="iPepperoni";
+    property name="clams" type="iClams"
     
     property name="ingredientFactory" type="iPizzaIngredientFactory";
 

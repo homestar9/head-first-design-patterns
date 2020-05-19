@@ -7,15 +7,15 @@ component
         return this;
     }
 
-    Dough function createDough() {
+    iDough function createDough() {
         return new models.ingredient.ThickCrustDough();
     }
 
-    Sauce function createSauce() {
+    iSauce function createSauce() {
         return new models.ingredient.PlumTomatoSauce();
     }
 
-    Cheese function createCheese() {
+    iCheese function createCheese() {
         return new models.ingredient.MozzarellaCheese();
     }
 
@@ -23,11 +23,11 @@ component
         return [ "eggplant", "spinach", "olives", "red pepper" ];  // simplified for example sake
     }
 
-    Pepperoni function createPepperoni() {
+    iPepperoni function createPepperoni() {
         return new models.ingredient.SlicedPepperoni();
     }
 
-    Clams function createClams() {
+    iClams function createClams() {
         return new models.ingredient.FreshClams();
     }
 }
