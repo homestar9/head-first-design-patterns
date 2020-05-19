@@ -20,12 +20,26 @@ component
         
         // lets actually make the pizza
         pizza.prepare();
-        pizza.bake();
-        pizza.cut();
-        pizza.box();
+        bake( pizza );
+        cut( pizza );
+        box( pizza );
 
         return pizza;
 
+    }
+
+    void function bake() {
+        output( "bake for 25 minutes at 350" );
+    }
+
+
+    void function cut() {
+        output( "cutting the pizza into diagonal slices" );
+    }
+
+
+    void function box() {
+        output( "place pizza in official pizza store box" );
     }
 
     /**

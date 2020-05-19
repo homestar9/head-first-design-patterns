@@ -4,9 +4,13 @@ component
 {
 
     property name="name";
-    property name="dough";
-    property name="sauce";
-    property name="toppings" type="array";
+    property name="dough" type="Ingredient";
+    property name="sauce" type="Ingredient";
+    property name="veggies" type="array";
+    property name="pepperoni" type="Ingredient";
+    property name="clams" type="Ingredient"
+    
+    property name="ingredientFactory" type="iPizzaIngredientFactory";
 
 
     function init() {
@@ -14,36 +18,8 @@ component
     }
 
 
-    void function addTopping( required string topping ) {
-        variables.toppings.append( arguments.topping );
-    }
-
-
     void function prepare() {
-
-        output( "Preparing " & getName() );
-        output( "Tossing " & getDough() & " Dough" );
-        output( "Adding  " & getSauce() & " Sauce" );
-
-        getToppings().each( function( topping ) {
-            output( "Adding a topping: " & topping );
-        } );
-
-    }
-
-
-    void function bake() {
-        output( "bake for 25 minutes at 350" );
-    }
-
-
-    void function cut() {
-        output( "cutting the pizza into diagonal slices" );
-    }
-
-
-    void function box() {
-        output( "place pizza in official pizza store box" );
+        throw( "I should be implemented at the concrete level" )
     }
 
 }   

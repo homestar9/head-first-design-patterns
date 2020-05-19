@@ -15,3 +15,8 @@ This chapter also demonstrates that the factory pattern also helps to implement 
 ![UML Diagram Showing Factory Patern][uml_diagram]
 
 [uml_diagram]: https://upload.wikimedia.org/wikipedia/commons/4/43/W3sDesign_Factory_Method_Design_Pattern_UML.jpg "UML Diagram Showing Factory Patern"
+
+
+## Adding an Ingredient Factory
+
+The book complicates things a little by adding ingredient factories to offload the creation of regional ingredients. However, it introduced a problem where we could no longer specify different ways to `cut()` the pizza for different regions. I decided to break away from the example a little by moving the prepration methods to the store classes instead of inside the pizza classes, which makes better sends to me anyway.

@@ -1,29 +1,45 @@
 component
     extends="models.pizzaStore.pizzaStore"
-    hint="I am a concrete implementation of pizza store for NY. I am known as a 'concrete creator'"
+    hint="I am a concrete implementation of pizza store. I am known as a 'concrete creator'"
 {
     
     /**
      * Create Pizza
      * This is the actual factory method which does the creating
+     * First we instantiate the ingredient factory for this store and then we pass it in as a 
+     * dependency for each type of pizza.  We then alter the name of the pizza to indicate the 
+     * geographic origin/style.
      */
-    pizza private function createPizza( required string type ) {
+    private pizza function createPizza( required string type ) {
 
+        var ingredientFactory = new models.ingredientFactory.NyPizzaIngredientFactory();
+        var pizza = "";
+        
         switch ( arguments.type ) {
-
+            
             case "cheese":
-                return new models.pizza.NyStyleCheesePizza();
+                pizza = new models.pizza.cheesePizza( ingredientFactory );
+                break;
 
             case "pepperoni":
-                return new models.pizza.NyStylePepperoniPizza();
+                pizza =  new models.pizza.pepperoniPizza( ingredientFactory );
+                break;
 
             case "veggie":
-                return new models.pizza.NyStyleVeggiePizza();
+                pizza =  new models.pizza.veggiePizza( ingredientFactory );
+                break;
+
+            case "clam":
+                pizza = new models.pizza.clamPizza( ingredientFactory );
+                break;
 
             default:
                 throw( "I don't know how to make a #arguments.type# pizza. Maybe you can teach me?" );
 
         }
+
+        pizza.setName( "New York Style " & pizza.getName() );
+        return pizza;
 
     }
 

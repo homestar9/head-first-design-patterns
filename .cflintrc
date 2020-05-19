@@ -30,9 +30,6 @@
 			"code": "COMPARE_INSTEAD_OF_ASSIGN"
 		},
 		{
-			"code": "COMPONENT_HINT_MISSING"
-		},
-		{
 			"code": "EXCESSIVE_FUNCTION_LENGTH"
 		},
 		{
@@ -75,5 +72,9 @@
 	"inheritParent": false,
 	"inheritPlugins": true,
 	"parameters": {},
-	"excludes": []
+	"excludes": [
+        {
+			"code": "COMPONENT_HINT_MISSING"
+		}
+    ]
 }
